@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.framgia.fancyhourpicker.MainActivity">
+
+    <com.framgia.hourpicker.FancyHourPicker
+        android:id="@+id/hour_picker"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="32dp"
+        app:fill_color="@color/colorAccent"
+        app:stroke_size="5"/>
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="23"
+        android:progress="1"/>
+
+</LinearLayout>
